@@ -3,7 +3,9 @@
 <suite name="StartUpTestSuite" verbose="1" >
     <test name="StartUpTest" >
         <classes>
-            <class name="com.selenium.startup.StartUpTest" />
+            <!--<class name="com.selenium.startup.StartUpTest" />-->
+            <!--<class name="com.vuealfasoftware.herokuapp.base.LoginTest" /> -->
+            <class name="com.vuealfasoftware.herokuapp.base.SignUpTest" />
         </classes>
     </test>
 </suite>
