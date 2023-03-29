@@ -4,8 +4,8 @@
     <test name="StartUpTest" >
         <classes>
             <!--<class name="com.selenium.startup.StartUpTest" />-->
-            <!--<class name="com.vuealfasoftware.herokuapp.base.LoginTest" /> -->
-            <class name="com.vuealfasoftware.herokuapp.base.SignUpTest" />
+            <class name="com.vuealfasoftware.herokuapp.base.LoginTest" />
+            <!--<class name="com.vuealfasoftware.herokuapp.base.SignUpTest" />-->
         </classes>
     </test>
 </suite>
