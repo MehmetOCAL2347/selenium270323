@@ -14,7 +14,7 @@ public class BaseTest {
     public void startUp(){
         //System.setProperty("webdriver.http.factory", "jdk-http-client");
         //System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-        browserFactory = new BrowserFactory("chrome");
+        browserFactory = new BrowserFactory("firefox");
         driver= this.browserFactory.createDriver();
         driver.manage().window().maximize();
     }

@@ -18,9 +18,11 @@ public class BrowserFactory {
     public WebDriver createDriver(){
         if (browser.equals("firefox")) {
             System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
+            System.out.println("Firefoxx");
             this.driver = new FirefoxDriver();
         }else {
             System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+            System.out.println("Chrome");
             this.driver = new ChromeDriver();
         }
         return this.driver;
