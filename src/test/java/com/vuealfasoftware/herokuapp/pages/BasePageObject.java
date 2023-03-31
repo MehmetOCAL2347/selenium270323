@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 // Interface ya da abstract yapmak mantıklı mı?
 public class BasePageObject {
@@ -64,6 +65,10 @@ public class BasePageObject {
             }
             attempts++;
         }
+    }
+
+    protected List<WebElement> findAll(By locator) {
+        return driver.findElements(locator);
     }
 
 }

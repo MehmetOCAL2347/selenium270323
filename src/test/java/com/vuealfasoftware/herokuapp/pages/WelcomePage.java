@@ -5,8 +5,9 @@ import org.openqa.selenium.WebDriver;
 
 public class WelcomePage extends BasePageObject{
 
-    private String pageUrl = "https://vue-alfabank-demo.web.app/main";
+    private String pageUrl = "https://the-internet.herokuapp.com/";
     private By loginPageLocator = By.xpath("//a[@href='/login']");
+    private By checkBoxLocator = By.xpath("//a[@href='/checkboxes']");
 
     public WelcomePage(WebDriver driver) {
         super(driver);
@@ -21,6 +22,11 @@ public class WelcomePage extends BasePageObject{
     public LoginPage getLoginPage(){
         click(loginPageLocator);
         return new LoginPage(driver);
+    }
+
+    public CheckBoxPage getCheckBoxPage(){
+        click(checkBoxLocator);
+        return new CheckBoxPage(driver);
     }
 
 }
