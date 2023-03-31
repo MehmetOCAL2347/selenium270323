@@ -1,10 +1,11 @@
-package com.vuealfasoftware.herokuapp.base;
+package com.vuealfasoftware.herokuapp.logintest;
 
+import com.vuealfasoftware.herokuapp.base.TestUtilities;
 import com.vuealfasoftware.herokuapp.pages.LoginPage;
 import com.vuealfasoftware.herokuapp.pages.WelcomePage;
 import org.testng.annotations.Test;
 
-public class LoginTest extends TestUtilities{
+public class LoginTest extends TestUtilities {
 
     private String userName = "udemySelenium@gmail.com"; // Parametre olarak gönder
     private String password = "udemySelenium!"; // Parametre olarak gönder

@@ -1,8 +1,9 @@
-package com.vuealfasoftware.herokuapp.base;
+package com.vuealfasoftware.herokuapp.logintest;
 
+import com.vuealfasoftware.herokuapp.base.TestUtilities;
 import org.testng.annotations.Test;
 
-public class SignUpTest extends TestUtilities{
+public class SignUpTest extends TestUtilities {
 
     @Test
     public void test(){
