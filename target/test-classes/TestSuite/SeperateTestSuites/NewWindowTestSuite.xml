@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="StartUpTestSuite" verbose="1" >
+    <test name="StartUpTest" >
+        <classes>
+            <class name="com.vuealfasoftware.herokuapp.newwindowtest.NewWindowTest"></class>
+            <!--<parameter name="expectedTitle" value="New Windows"></parameter>-->
+        </classes>
+    </test>
+</suite>
