@@ -9,6 +9,7 @@ public class WelcomePage extends BasePageObject{
     private By loginPageLocator = By.xpath("//a[@href='/login']");
     private By checkBoxLocator = By.xpath("//a[@href='/checkboxes']");
     private By dropdownLocator = By.xpath("//a[@href='/dropdown']");
+    private By alertsLocator = By.xpath("//a[@href='/javascript_alerts']");
 
     public WelcomePage(WebDriver driver) {
         super(driver);
@@ -33,6 +34,11 @@ public class WelcomePage extends BasePageObject{
     public DropdownPage getDropdownPage(){
         click(dropdownLocator);
         return new DropdownPage(driver);
+    }
+
+    public AlertsPage getAlertPage(){
+        click(alertsLocator);
+        return new AlertsPage(driver);
     }
 
 }
