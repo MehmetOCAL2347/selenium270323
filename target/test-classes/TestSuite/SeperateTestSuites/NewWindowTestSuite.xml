@@ -4,7 +4,7 @@
     <test name="StartUpTest" >
         <classes>
             <class name="com.vuealfasoftware.herokuapp.newwindowtest.NewWindowTest"></class>
-            <!--<parameter name="expectedTitle" value="New Windows"></parameter>-->
+            <parameter name="expectedTitle" value="New Windows"></parameter>
         </classes>
     </test>
 </suite>

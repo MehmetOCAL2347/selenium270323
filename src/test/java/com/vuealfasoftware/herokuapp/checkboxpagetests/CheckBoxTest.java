@@ -8,8 +8,10 @@ import org.testng.annotations.Test;
 
 public class CheckBoxTest extends TestUtilities {
 
-    @Test
-    public void checkBoxTest(){
+    @Test(dataProvider = "files")
+    public void checkBoxTest(String key, String expectedMessage){
+
+        System.out.println(key + " " + expectedMessage);
 
         WelcomePage welcomePage = new WelcomePage(driver);
         welcomePage.openPage();
@@ -17,7 +19,7 @@ public class CheckBoxTest extends TestUtilities {
         CheckBoxPage checkBoxPage = welcomePage.getCheckBoxPage();
         checkBoxPage.selectAllCheckboxes();
 
-        Assert.assertTrue(checkBoxPage.areAllCheckBoxesChecked(), "Not all checkboxes are checked");
+        Assert.assertTrue(checkBoxPage.areAllCheckBoxesChecked(), expectedMessage);
 
     }
 
