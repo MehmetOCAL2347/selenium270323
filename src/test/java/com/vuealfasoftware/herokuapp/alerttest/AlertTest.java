@@ -25,8 +25,13 @@ public class AlertTest extends TestUtilities {
         WelcomePage welcomePage = new WelcomePage(driver);
         welcomePage.openPage();
 
+        takeScreenShots("OpenJSAlert");
+
+
         AlertsPage alertsPage = welcomePage.getAlertPage();
         alertsPage.openJSAlert();
+
+
 
         String alertText = alertsPage.getAlertText();
 
