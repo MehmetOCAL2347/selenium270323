@@ -11,8 +11,6 @@ public class CheckBoxTest extends TestUtilities {
     @Test(dataProvider = "files")
     public void checkBoxTest(String key, String expectedMessage){
 
-        System.out.println(key + " " + expectedMessage);
-
         WelcomePage welcomePage = new WelcomePage(driver);
         welcomePage.openPage();
 
