@@ -100,4 +100,12 @@ public class BasePageObject {
         }
     }
 
+    public void setCookie(Cookie cookie){
+        driver.manage().addCookie(cookie);
+    }
+
+    public String getCookie(String name){
+        return driver.manage().getCookieNamed(name).getValue();
+    }
+
 }

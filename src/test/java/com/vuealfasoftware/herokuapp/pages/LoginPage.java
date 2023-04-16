@@ -5,9 +5,9 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends BasePageObject{
 
-    private By locatorOfUserEmail = By.id("userId");
+    private By locatorOfUserEmail = By.id("username");
     private By locatorOfPassword = By.id("password");
-    private By locatorOfLoginButton = By.id("loginButton");
+    private By locatorOfLoginButton = By.xpath("//i[@class='fa fa-2x fa-sign-in']");
 
     public LoginPage(WebDriver driver) {
         super(driver);
